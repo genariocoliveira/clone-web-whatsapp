@@ -90,3 +90,12 @@ header{
     padding: 40px 60px;
   }
 }
+@media (min-width: 1096px) {
+  .containerP{
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .landing-content{
+    width: 1000px;
+  }
+}
