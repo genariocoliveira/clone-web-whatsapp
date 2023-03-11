@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+  --background-primary: #F0F2F5;
+  --background-green-top: #00A683;
+  --background-icons: #e6e6e6;
+  --background-secondary: #F9F9FA;
+}
+.containerP{
+  margin: 0 35px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  color: #3b4a54;
+  background: #F0F2F5;
+}
+header{
+  background: var(--background-green-top);
+  height: 95px;
+  display: flex;
+  align-items: center;
+}
+.landing-header{
+  display: flex;
+  align-items: center;
+}
+.landing-headerTitle{
+  color: #fff;
+  font-size: .88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 0 14px;
+}
+.content{
+  position: relative;
+}
+.landing-wrapper-before{
+  display: none;
+}
+.landing-content{
+  background: #fff;
+  padding: 20px 35px;
+}
+
+.contentTopTitle{
+  font-size: 1.6rem;
+  font-weight: 200;
+  margin: 24px 0;
+}
+.empty{
+  height: 10px;
+}
+._contentTop{
+  flex: 2;
+}
+._contentTop ol{
+  padding: 0 25px 0 20px;
+}
+._contentTop ol li{
+  margin: 15px 0;
+  line-height: 30px;
+}
+._icon{
+  background-color: #e6e6e6;
+  display: inline-block;
+  padding: 1px 3px;
+}
+/* ================================== */
+@media (min-width: 661px) {
+  .containerP{
+    max-width: 90%;
+    margin: 0 5%;
+  }
+  .landing-wrapper-before{
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--background-green-top);
+    display: block;
+    z-index: -1;
+  }
+  .landing-content{
+    border-radius: 5px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 40px 60px;
+  }
+}
