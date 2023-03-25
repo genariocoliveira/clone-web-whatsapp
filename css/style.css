@@ -73,9 +73,14 @@ header{
 
 .borderTop{
   border-radius: 5px 5px 0 0;
+  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
 .borderBottom{
   border-radius: 0 0 5px 5px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+  margin-bottom: 150px !important;
+  z-index: 2;
 }
 .contentTitle{
   font-size: 1.6rem;
@@ -88,6 +93,49 @@ header{
   font-weight: 600;
   color: #008069;
 }
+
+/* ================================== */
+#video-container {
+  position: relative;
+  width: 60%;
+  height: 360px;
+  margin: 0 auto;
+}
+
+#video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#video-container .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('caminho/para/imagem/capa.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#video-container .play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#video-container .play-button img {
+  width: 80px;
+  height: 80px;
+}
+
 /* ================================== */
 @media (min-width: 661px) {
   .containerP{
